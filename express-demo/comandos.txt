@@ -1,0 +1,36 @@
+npm -init --yes  --gera meu package json, comeco aqui com o node
+
+npm outdated - ver as atualizacoes disponiveis
+-- npm i -g npm-check-updates -- > pra checar updates de dependencias, bem util
+ncu -u atualizar as dependencias, logo depois disso instalar com npm i
+
+npm list --depth=0 --> lista todas as dependencias
+npm list mongoose --> lista uma dependecia especifica by nome
+npm view mongoose dependencies --> ve as dependencias de uma dependencia sua =)
+
+
+dev dependencies -> Nao instala em producao 
+npm i jshint --save-dev
+
+
+os meus pacotes globais -g
+npm -g outdated
+
+meu npmlogin:
+allansuru
+pass@word455825
+allansuru@hotamil.com
+
+publicando um package: crio um npm init, um js
+dai logo no meu npm. Faço npm publish, depois q salvei meu package no npm,
+inicio um outro projeto(npm init), instalo meu package: ex: npm i teste-estudos-suru
+
+ele vai brotar no package.json, uso um require('teste-estudos-suro') e ja era.
+
+pra criar novas versoes desse minha biblioteca: npm version minor, npm publish
+
+npm i -g nodemon --> pra nao ficar parando o node e rodando novamente qnd atualiza o font
+
+ao inves de rodar node .app.js, usar nodemon app.js
+
+adicionando variavel de sistema: set
