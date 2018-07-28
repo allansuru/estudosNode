@@ -16,10 +16,7 @@ npm i jshint --save-dev
 os meus pacotes globais -g
 npm -g outdated
 
-meu npmlogin:
-allansuru
-pass@word455825
-allansuru@hotamil.com
+
 
 publicando um package: crio um npm init, um js
 dai logo no meu npm. Faço npm publish, depois q salvei meu package no npm,
@@ -34,3 +31,5 @@ npm i -g nodemon --> pra nao ficar parando o node e rodando novamente qnd atuali
 ao inves de rodar node .app.js, usar nodemon app.js
 
 adicionando variavel de sistema: set
+
+// npm joi pra validar inputs TOP https://www.npmjs.com/package/joi

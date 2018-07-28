@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+app.use(express.json());
 
 const courses = [
     {id: 1, name: 'course1'},
@@ -31,6 +32,20 @@ app.get('/api/posts/:year/:day', (req, res) => {
     //res.send(req.params); 
     res.send(req.query); 
   });
+
+app.post('/api/courses', (req, res) => {
+    //400 Bad request
+    if(!req.body.name || req.body.name.length < 3) {
+        res.status(400).send('Name is required and should be minimal three characters');
+        return;
+    }
+    const course = {
+        id: courses.length + 1,
+        name: req.body.name
+    };
+    courses.push(course);
+    res.send(course);
+});
 
 //PORT
 const port = process.env.PORT || 3000
